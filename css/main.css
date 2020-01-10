@@ -1,0 +1,99 @@
+html {
+  font-size: 14px;
+  font-size: 1.6vw;
+  font-family: "Roboto Slab", sans;
+  font-weight: 300;
+}
+body {
+  margin: 0;
+  color: #0e0208;
+}
+a,
+a:visited,
+a:active {
+  color: #0e0208;
+}
+a:hover {
+  text-decoration: none;
+}
+.wrapper {
+  margin: 3vw 7vw 4vw;
+}
+
+p, li { line-height: 1.6em; }
+
+ul, p { margin: 0 0 0.2vw; padding: 0; }
+
+h1, h2, h3 {
+  font-family: "Cormorant Garamond";
+  font-weight: 600;
+  margin: 0;
+}
+h1 { margin: 2.5vw 0 1.2vw; font-size: 2.4rem; clear: both; }
+h2 { margin: 2.4vw 0 0.2vw; font-size: 1.8rem; }
+h3 { margin: 2.2vw 0 0.5vw; font-size: 1.4rem; font-weight: 300; }
+
+em.disclaimer { font-size: 0.75rem; }
+
+.links { display: inline-block; float: right; margin: 0; }
+.links li { display: inline; margin-right: 1.4vw; line-height: normal; }
+.links a { color: #0e0208; }
+.links .fa { font-size: 3vw; }
+
+.experience-item .heading {
+  display: -webkit-flex; display: flex;
+  align-items: baseline;
+}
+.experience-item .heading .time {
+  -webkit-flex: 1; flex: 1;
+  text-align: right;
+  font-size: 0.75rem;
+}
+.experience-item em.subtitle {
+  font-size: 0.75rem;
+}
+.experience-item p {
+  margin-top: 0.4vw;
+  margin-right: 0;
+}
+
+.cv {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.cv .experience {
+  -webkit-flex: 1.618;
+  flex: 1.618;
+  margin-right: 4vw;
+}
+.cv .knowledge {
+  -webkit-flex: 1;
+  flex: 1;
+}
+
+.knowledge ul {
+  display: inline-block;
+  list-style: none;
+}
+.knowledge li { display: inline; }
+.knowledge li:after { content: ", "; }
+.knowledge li:last-child:after { content: "."; }
+
+@media (max-width: 992px) {
+  html {
+    font-size: 2.2vw;
+  }
+  .wrapper {
+    margin: 2vw 4vw 3vw;
+  }
+  .cv { -webkit-flex-wrap: wrap; flex-wrap: wrap; }
+  .cv .experience { -webkit-flex: 100%; flex: 100%; margin-right: 0; }
+  .cv .knowledge { -webkit-flex: 100%; flex: 100%; }
+}
+
+/* For printing */
+@media print {
+  html { font-size: 16px; }
+  .cv { display: block;}
+}
