@@ -60,7 +60,7 @@ em.disclaimer { font-size: 0.75rem; }
 .cv {
   display: -webkit-flex;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
 }
 .cv .experience {
   -webkit-flex: 1.618;
